@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".InstActivity">
+
+
+    <TextView
+        android:id="@+id/cont"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="153dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="285dp"
+
+        android:justificationMode="inter_word"
+        android:text="@string/inst"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/ref"
+        android:layout_width="242dp"
+        android:layout_height="153dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="120dp"
+        app:srcCompat="@drawable/refimg" />
+
+    <Button
+        android:id="@+id/agree"
+        android:layout_width="124dp"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="44dp"
+        android:text="Next"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/hdn"
+        android:layout_width="225dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="97dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="635dp"
+        android:gravity="center"
+        android:text="Instructions"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:textStyle="bold|italic" />
+</RelativeLayout>

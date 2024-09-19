@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient"
+    >
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:buttonTint="#64cc4f"
+        app:useMaterialThemeColors="false"
+        android:layout_above="@+id/showCardButton"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="40dp">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:useMaterialThemeColors="false"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:buttonTint="#64cc4f"
+            android:text="Mild" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            app:useMaterialThemeColors="false"
+            android:buttonTint="#64cc4f"
+            android:layout_height="wrap_content"
+            android:text="Moderate" />
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:buttonTint="#64cc4f"
+            app:useMaterialThemeColors="false"
+            android:backgroundTint="#64cc4f"
+            android:layout_height="wrap_content"
+            android:text="Severe" />
+    </RadioGroup>
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="450dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="5dp"
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/myCardView"
+            android:layout_width="181dp"
+            android:layout_height="213dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="#FFFFFFFF"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="14dp"
+            app:layout_column="0"
+            app:layout_row="0">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="56dp"
+                    android:layout_height="45dp"
+
+                    app:layout_column="0"
+                    app:layout_row="0"
+                    app:srcCompat="@drawable/clock" />
+
+                <TextView
+                    android:id="@+id/screenlab"
+                    android:layout_width="112dp"
+                    android:layout_height="46dp"
+                    android:gravity="center"
+                    android:text="Screen Time"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_column="0"
+                    app:layout_row="0" />
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/screen_time_text_view"
+                android:layout_width="157dp"
+                android:layout_height="141dp"
+                android:gravity="center"
+                android:layout_marginTop="60dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Screen Time"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_column="0"
+                app:layout_row="0" />
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/myCardView1"
+            android:layout_width="181dp"
+            android:layout_height="213dp"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="#FFFFFFFF"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="12dp"
+            app:layout_column="1"
+            app:layout_row="0" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="57dp"
+                    android:layout_height="41dp"
+
+                    app:layout_column="1"
+                    app:layout_row="0"
+                    app:srcCompat="@drawable/eye" />
+
+                <TextView
+                    android:id="@+id/drylab"
+                    android:layout_width="112dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="Dryness"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_column="1"
+                    app:layout_row="0" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dryness"
+                android:layout_marginStart="11dp"
+                android:layout_width="157dp"
+                android:layout_height="141dp"
+                android:gravity="center"
+                android:layout_marginTop="60dp"
+                android:text="Dryness"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/myCardView2"
+            android:layout_width="181dp"
+            android:layout_height="213dp"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="#FFFFFFFF"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="12dp"
+            app:layout_column="0"
+            app:layout_row="1" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="56dp"
+                    android:layout_height="51dp"
+
+                    app:layout_column="0"
+                    app:layout_row="1"
+                    app:srcCompat="@drawable/location" />
+                <TextView
+                    android:id="@+id/locationlab"
+                    android:layout_width="112dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="Location"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="157dp"
+                android:layout_height="141dp"
+                android:gravity="center"
+                android:layout_marginTop="60dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Location "
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                app:layout_column="0"
+                app:layout_row="1" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/myCardView3"
+            android:layout_width="181dp"
+            android:layout_height="213dp"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="#FFFFFFFF"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="12dp"
+            app:layout_column="1"
+            app:layout_row="1" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="66dp"
+                    android:layout_height="49dp"
+
+                    app:layout_column="1"
+                    app:layout_row="1"
+                    app:srcCompat="@drawable/sun" />
+                <TextView
+                    android:id="@+id/weatherlab"
+                    android:layout_width="112dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="Weather"
+                    android:textSize="20dp"
+                    app:layout_column="1"
+                    app:layout_row="1" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/weather"
+                android:layout_marginStart="9dp"
+                android:layout_width="157dp"
+                android:layout_height="141dp"
+
+                android:gravity="center"
+                android:layout_marginTop="60dp"
+                android:text="Weather"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:layout_column="1"
+                app:layout_row="1" />
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/showCardButton"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gridLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="485dp"
+        android:backgroundTint="#64cc4f"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="401dp"
+        android:layout_height="57dp"
+        android:layout_above="@+id/showCardButton"
+        android:layout_marginBottom="114dp"
+        android:gravity="center"
+        android:text="Feeling of Eye dryness ?"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

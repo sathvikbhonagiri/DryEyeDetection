@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dry_Eye</string>
+    <string name="inst">This App checks for the Lightning , Blurriness of the captured image and  if all the conditions are satisfied you will see a button to calculate redness
+  so ensure that there is no blurriness and enough lighting in the captured image.
+
+\n\nThe image that you capture should match with the Reference Image as shown below :</string>
+</resources>
